@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="back">
+        <header>
+        <nav class="navigation">
+            <img id="logo"  src="logo.png" >
+            <ul>
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="aboutpage.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="mywork.html">MY WORK</a></li>
+                <li><a href="CONTACTS.HTML">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+     <!--home section design-->
+        <section class="home" id="home">
+        <div class="content">
+            <h3>Hello, It's Me</h3>
+            <h1>ELIAS MBUGUA</h1>
+                <h3>And I'm a 
+                    <span class="text first-text"></span>
+                </h3>
+            
+            <p>This is my official portfolio website to show all
+                <br>details and work experience on web development
+            </p>
+            <div class="social media">
+                <a href="#"><i class="bx bx1-facebook"></i></a>
+                <a href="#"><i class="bx bx1-twitter"></i></a>
+                <a href="#"><i class="bx bx1-instagram-alt"></i></a>
+                <a href="#"><i class="bx bx1-linkedin"></i></a>
+            </div>
+         <a href="cv.html">DOWNLOAD CV</a>
+        </div>
+        <div class="home img">
+            <img src="ELIAS.JPG.jpg">
+        </div>
+    </section>
+    </div>
+
+    <!--about section design-->
+    <section class="about" id="about">
+        <div class="about img">
+            <img src="MBUGUA.JPG.jpg">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Graphic Designer & Web Developer</h3>
+            <p>Im Elias Mbugua both Front End and Back End Deloper. <br>I graduated on 5th 2020 as a software developer from Muringa School.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+       
+    </section>
+
+    <!--service section design-->
+
+
+    <script>
+        const text=document.querySelector(".first-text");
+const textLoad=()=>
+{
+    setTimeout(()=>(
+        text.textContent="Graphic Designer"
+    ),0);
+    setTimeout(()=>(
+        text.textContent="Web Designer"
+    ),4000);
+    setTimeout(()=>(
+        text.textContent="FrontEnd Developer"
+    ),8000);
+    setTimeout(()=>(
+        text.textContent="BackEnd Developer"
+    ),12000);
+    setTimeout(()=>(
+        text.textContent="Video Editor"
+    ),16000);
+}
+textLoad()
+setInterval(textLoad,12000)
+
+    </script>
+</body>
+</html>
